@@ -12,6 +12,10 @@ app.listen(8080, () => {
     console.log('Rodando na porta 8080');
 });
 
+app.get('/', (req, res) => {
+    res.send('Hello World');
+});
+
 //definindo rotas 
 
 //rota para buscar TODOS os usuários(método Sequilize)
